@@ -121,30 +121,7 @@ void MyDataBaseClass::getDataFromHistory(QString table, QString number, QString 
 
 
 
-//UserData MyDataBaseClass::getUserByID(quint8 id)
-//{
-//    UserData tmpUser;
-//    tmpUser.name = "Неизвестно";
 
-//    if (!QSqlDatabase::contains("KRD")){
-//        return tmpUser;
-//    }
-//    // получаем данные о соединении с базой данных
-//    QSqlDatabase db = QSqlDatabase::database("KRD");
-
-//    if (db.isOpen()){
-//        QSqlQuery query(db);
-
-//        query.exec("SELECT userID, userName FROM users WHERE userID=" + QString::number(id));
-//        QSqlRecord rec = query.record();
-
-//        while (query.next()){
-//            tmpUser.userID = query.value(rec.indexOf("userID")).toInt();
-//            tmpUser.name = query.value(rec.indexOf("userName")).toString();
-//        }
-//    }
-//    return tmpUser;
-//}
 
 //QList<UserData> MyDataBaseClass::getUsersFromBase()
 //{
