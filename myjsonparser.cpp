@@ -46,29 +46,6 @@ QList<QString> MyJSONParser::getArrayText(QString fileName, QString section, QSt
 
         }
 
-//        QString str = json["hello"].toString();
-//        qDebug() << str;
-
-
-//        QJsonValue test2 = json.value("test2");
-//        if (test2.isObject())
-//        {
-
-//            QJsonObject obj2 = test2.toObject();
-//            QJsonArray ar = obj2["a"].toArray(); qDebug() << ar;
-//            bool t = obj2["t"].toBool(); qDebug() << t;
-
-
-//            QJsonValue test3 = obj2.value("test3");
-//            if (test3.isObject())
-//            {
-//                QJsonObject obj3 = test3.toObject();
-//                int i = obj3["i"].toInt(); qDebug() << i;
-//                double pi = obj3["pi"].toDouble(); qDebug() << pi;
-//            }
-
-//        }
-
     }
     return  m;
 
