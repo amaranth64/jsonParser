@@ -121,35 +121,6 @@ void MyDataBaseClass::getDataFromHistory(QString table, QString number, QString 
 
 
 
-
-
-//QList<UserData> MyDataBaseClass::getUsersFromBase()
-//{
-//    QList<UserData> tmpUser;
-
-//    if (!QSqlDatabase::contains("KRD")){
-//        return tmpUser;
-//    }
-
-//    // получаем данные о соединении с базой данных
-//    QSqlDatabase db = QSqlDatabase::database("KRD");
-
-//    if (db.isOpen()){
-//        QSqlQuery query(db);
-
-//        query.exec("SELECT * FROM users ;");
-//        QSqlRecord rec = query.record();
-
-//        while (query.next()){
-//            UserData ud;
-//            ud.userID = query.value(rec.indexOf("userID")).toInt();
-//            ud.name = query.value(rec.indexOf("userName")).toString();
-//            tmpUser.append(ud);
-//        }
-//    }
-//    return tmpUser;
-//}
-
 //bool MyDataBaseClass::disconnectFromBase()
 //{
 //    if (QSqlDatabase::contains("valves")) {
